@@ -3,69 +3,127 @@
 <html lang="pt-br">
     <head> 
         
-        <title></title>
-        <meta charset="utf-8">
-        <meta name="author" content="Pedro">
-        <meta name="description" content="content">
+        <title>Conceito e Partido</title>
+            <meta charset="utf-8">        
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="../../../Curso/node_modules/bootstrap/compiler/bootstrap.css">
+      
+            <link rel="stylesheet" href="../../../Curso/node_modules/bootstrap/compiler/style.css">  
         
-    <style>
-        .iframe-container{
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; 
-            height: 0;
-            }
-        .iframe-container iframe{
-            position: absolute;
-            top:0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>    
+            <style>
+                h3{
+                    background-color: rgba(0, 0, 0, 0.31);
+                    width: 45%;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+                    margin: auto;
+                }
+                p{
+                    background-color: rgba(0, 0, 0, 0.31);
+                }
         
+            </style>
     </head>
+    
     <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+          <a class="navbar-brand" mb-0 href="#">Conceito e Partido</a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSite">
+              
+              
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Av. Contorno</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contato com a arquiteta</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lojas</a>  
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Sobre
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.instagram.com/leticiamoural/?hl=pt-br" target="_blank">A Arquiteta</a>
+                        <a class="dropdown-item" href="#">O Projeto</a>
+                    </div>
+                </li>
+              </ul>
+              
+              <form class="form-inline">
+                <input class="form-control mt-2 mb-2 ml-2 mr-2" type="search" placeholder="Buscar">
+                <button class="btn btm-default" type="submit">Ok</button>                
+              </form>
+          </div>
+        </nav>
+        
         <div id="carouselSite" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselSite" data-slide-to="1"></li>
-            <li data-target="#carouselSite" data-slide-to="2"></li>
-        </ol>
-
-
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <img src="Imagens/WhatsApp%20Image%202019-11-13%20at%204.49.35%20PM%20(9).jpeg" class="img-fluid d-block w-100">
+            
+            <ol class="carousel-indicators">
+                <li data-target="carouselSite" data-slide-to="0" class="active"></li> <li data-target="carouselSite" data-slide-to="1" class="active"></li> <li data-target="carouselSite" data-slide-to="2" class="active"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+            
+                <div class="carousel-item active">
+                    <img src="Imagens/11.jpg" class="img-fluid d-block">
+                    <div class="carousel-caption d-none d-md-block">
+                           
+                        <h3>Comodidade</h3>
+                        <p>Mais conforto para você e para a sua família.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="Imagens/22.jpg" class="img-fluid d-block">
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                        <h3>Segurança</h3>
+                        <p>Traz uma zona onde ocorre a livre circulação de pedestres com muito lazer envolvido, juntamento com um Centro Gastronômico e uma área de livre acesso.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="Imagens/33.jpg" class="img-fluid d-block">
+                    
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                        <h3>Ar Puro</h3>
+                        <p>Conta com uma barreira viva repleta de uma natureza agradável e saudável.</p>
+                        
+                    </div>
+                </div>
+            
             </div>
-
-            <div class="carousel-item">
-                <img src="Imagens/WhatsApp%20Image%202019-11-13%20at%204.49.35%20PM%20(5).jpeg" class="img-fluid d-block w-100">
-            </div>
-
-            <div class="carousel-item">
-                <img src="Imagens/WhatsApp%20Image%202019-11-13%20at%204.49.35%20PM%20(12).jpeg" class="img-fluid d-block w-100">
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"> </span>
-            <span class="sr-only">Anterior</span>
-        </a>
-
-        <a class="carousel-control-next" href="#carouselSite" role="buton" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="sr-only"> Próximo</span>
-        </a>
+            
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Avançar</span>
+            </a>
+             
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            
         </div>
         
-        <div class="iframe-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-8idxz09w54" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3227324747254!2d-49.2570940855385!3d-16.660725949295166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef3c595a31785%3A0x7098f011f2f9ed6e!2sAv.%20Contorno%2C%201249-1151%20-%20Setor%20Norte%20Ferrovi%C3%A1rio%2C%20Goi%C3%A2nia%20-%20GO%2C%2074063-350!5e0!3m2!1spt-BR!2sbr!4v1577059428468!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        
-        
+        <script src="../../../Curso/node_modules/jquery/dist/jquery.js"></script>
+        <script src="../../../Curso/node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../../../Curso/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>
