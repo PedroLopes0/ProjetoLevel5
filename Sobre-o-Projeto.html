@@ -14,6 +14,19 @@
                 body{
                     background-color: #f4f4f4;
                 }
+                
+                .lino{
+                    color:default;
+                }
+                .lino:hover{
+                    color:rgb(193, 0, 0);
+                    text-decoration: none;
+                }
+                .lino:visited{
+                    color:default;
+                    text-decoration: none;
+                }
+                
             </style>
         </head>
     
@@ -32,7 +45,7 @@
               
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="Av-Contorno.html">Av. Contorno</a>  
+                  <a class="nav-link" href="Av-Contorno.html">Área de Atuação</a>  
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Contato.html">Contato com a arquiteta</a>  
@@ -51,15 +64,113 @@
               </ul>
               
               <form class="form-inline">
-                <input class="form-control mt-2 mb-2 ml-2 mr-2" type="search" placeholder="Buscar">
-                <button class="btn btn-dark" type="submit">Ok</button>                
+                <input class="form-control mt-2 mb-2 ml-2 mr-2" list="historico" type="search" placeholder="Buscar">
+                <button class="btn btn-dark" type="submit">Ok</button>    
+                  
+                    <datalist id="historico">
+                        <option value="Arquiteta"></option>
+                        <option value="Área de Implantação"></option>
+                        <option value="Contato"></option>
+                        <option value="Home"></option>
+                        <option value="Projeto"></option>    
+                    </datalist>
+                  
               </form>
           </div>
         </nav>
+            
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-center my-5 bg-transparent text-dark">
+                    
+                        <h1 class="display-4 my-3">Requalificação da Avenida Contorno e Centro Gastronômico </h1>
+                        
+                        <h2 class="display-4 my-5">
+                            Conceito
+                        </h2>
+                        
+                        <p class="text">
+                           
+                            Segurança para o pedestre; <br>
+                            Espaço urbano ativo e livre para o cidadão em período integral;
+                            <br>
+                            Ambiente de estética agradável e qualificado.
+                        </p>
+                        
+                        <h2 class="display-4 my-5">
+                            Partido
+                        </h2>
+                        
+                        <p class="text">
+                            Centro Gastronômico como lazer e novos espaços sociais alternativos;
+                            <br>
+                            Pedestralização parcial da região, colocando o pedestre como prioridade;
+                            <br>
+                            Aumento de áreas verdes.
+                        </p>
+                        
+                        <p class="text">
+                        Tanto o conceito quanto o partido do meu projeto procuram atender à <b>Gentileza Urbana</b>.
+                        </p>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container text-center">
+                <p><a href="#" class="lino" data-toggle="modal" data-target="#siteModal"> Clique para saber mais sobre Conceito e Partido.</a></p>
+                
+            </div>
+            
+            <div class="container text-center">
+                <ul style="list-style-type: none">
+                    <h1 class="display-5 my-4">Intervenções</h1>
+                    <li >Centro Gastronômico</li>
+                    <li>Estacionamento Público</li>
+                    <li>Rua de Pedestres</li>
+                    <li>Praça Pública</li>
+                    <li>Alargamento da Calçadas</li>
+                </ul>
+            </div>
+            
+            <div class="modal" id="siteModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="documento">
+                    <div class="modal-content">
+                       <div class="modal-header">
+                            <h5 class="modal-title">Conceito e Partido</h5>
+                           <button type="button" class="close" data-dismiss="modal">
+                           <span>x</span>
+                           </button>
+                        </div> 
+                        
+                        <div class="modal-body">
+                        
+                            <div>
+                                <h4 style="font-size: 17px">Conceito</h4>
+                                <p>Expressa a ideia subjetiva no desenho e orienta as decisões do projeto. Abstrato.</p>
+                                <h4 style="font-size: 17px">Partido</h4>
+                                <p>O que é usado para alcançar a identidade. Prático.</p>                            
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal">Fechar
+                            
+                            </button>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
           
-          <footer class="col-12 text-center my-4 font-weight-light bg-transparent">
+          <div class="container text-center"><footer class="col-12 text-center my-4 font-weight-light bg-transparent">
                 <p>Copyright &copy; </p>
             </footer> 
+            </div>
                     
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
