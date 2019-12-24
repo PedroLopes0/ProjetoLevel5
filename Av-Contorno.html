@@ -14,6 +14,34 @@
                 body{
                     background-color: #f4f4f4;
                 }
+                .iframe-container{
+                    position: relative;
+                    width: 90%;
+                    margin:auto;
+                    margin-bottom: 0%;
+                    padding-bottom: 56.25%; 
+                    height: 0;
+                }
+                .iframe-container iframe{
+                    position: absolute;
+                    top:40px;
+                    left: 15%;
+                    width: 70%;
+                    height: 70%;
+                }
+                .maps{
+                    position: relative;
+                    width: 70%;
+                    padding-bottom: 56.25%; 
+                    height: 0;
+                }
+                .maps iframe{
+                    position: absolute;
+                    top:10px;
+                    left: 35.5%;
+                    width: 70%;
+                    height: 60%;
+                }
             </style>
         </head>
     
@@ -32,7 +60,7 @@
               
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="Av-Contorno.html">Av. Contorno</a>  
+                  <a class="nav-link" href="Av-Contorno.html">Área de Atuação</a>  
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Contato.html">Contato com a arquiteta</a>  
@@ -51,11 +79,56 @@
               </ul>
               
               <form class="form-inline">
-                <input class="form-control mt-2 mb-2 ml-2 mr-2" type="search" placeholder="Buscar">
-                <button class="btn btn-dark" type="submit">Ok</button>                
+                <input class="form-control mt-2 mb-2 ml-2 mr-2" list="historico" type="search" placeholder="Buscar">
+                <button class="btn btn-dark" type="submit">Ok</button>    
+                  
+                    <datalist id="historico">
+                        <option value="Arquiteta"></option>
+                        <option value="Área de Implantação"></option>
+                        <option value="Contato"></option>
+                        <option value="Home"></option>
+                        <option value="Projeto"></option>    
+                    </datalist>
+                  
               </form>
           </div>
         </nav>
+            
+            
+        <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-center my-5 bg-transparent text-dark">
+                    
+                        <h1 class="display-4 my-4">Região da Avenida Contorno</h1>
+                        
+                        <p class="text">
+                           
+                            Aqui pode ser encontrado um vídeo da região demonstrando um espaço urbano ativo e movimentado em perído integral.
+                        </p>
+                           
+        <blockquote class="blockquote text-center ml-5 my-4">
+            <p class="mb-0">"Região da 44 segue em crescimento, em Goiânia".</p>
+        <footer class="blockquote-footer">G1 Goiás <cite title="Source Title">, 5 de fev. de 2019</cite></footer>
+            </blockquote>    
+                        
+        <div class="iframe-container embed-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JY2NpRhf7EU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12 text-center bg-transparent text-dark">
+                        
+                        <p class="text my-2">
+                             Além disso existe um mapa que demonstra a localização aproximada da região.
+                        </p>
+                    </div>
+                </div>
+                        </div>
+                        
+             <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3227324747254!2d-49.2570940855385!3d-16.660725949295166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef3c595a31785%3A0x7098f011f2f9ed6e!2sAv.%20Contorno%2C%201249-1151%20-%20Setor%20Norte%20Ferrovi%C3%A1rio%2C%20Goi%C3%A2nia%20-%20GO%2C%2074063-350!5e0!3m2!1spt-BR!2sbr!4v1577059428468!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
           
           <footer class="col-12 text-center my-4 font-weight-light bg-transparent">
                 <p>Copyright &copy; </p>

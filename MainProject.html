@@ -35,34 +35,21 @@
                     color:white;
                     text-decoration: none;
                 }
+                .lino{
+                    color:default;
+                }
+                .lino:hover{
+                    color:rgb(193, 0, 0);
+                    text-decoration: none;
+                }
+                .lino:visited{
+                    color:default;
+                    text-decoration: none;
+                }
                 
-                .iframe-container{
-                    position: relative;
-                    width: 70%;
-                    margin-bottom: 10px;
-                    padding-bottom: 56.25%; 
-                    height: 0;
+                .text{
+                    background-color:rgba(240, 248, 255, 0);
                 }
-                .iframe-container iframe{
-                    position: absolute;
-                    top:30px;
-                    left: 30px;
-                    width: 60%;
-                    height: 45%;
-                }
-                .maps{
-                    position: relative;
-                    width: 70%;
-                    padding-bottom: 56.25%; 
-                    height: 0;
-                }
-                .maps iframe{
-                    position: absolute;
-                    top:10px;
-                    left: 30px;
-                    width: 60%;
-                    height: 45%;
-                        
             </style>
         </head>
     
@@ -81,7 +68,7 @@
               
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="Av-Contorno.html">Av. Contorno</a>  
+                  <a class="nav-link" href="Av-Contorno.html">Área de Atuação</a>  
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Contato.html">Contato com a arquiteta</a>  
@@ -100,8 +87,17 @@
               </ul>
               
               <form class="form-inline">
-                <input class="form-control mt-2 mb-2 ml-2 mr-2" type="search" placeholder="Buscar">
-                <button class="btn btn-dark" type="submit">Ok</button>                
+                <input class="form-control mt-2 mb-2 ml-2 mr-2" list="historico" type="search" placeholder="Buscar">
+                <button class="btn btn-dark" type="submit">Ok</button>    
+                  
+                    <datalist id="historico">
+                        <option value="Arquiteta"></option>
+                        <option value="Área de Implantação"></option>
+                        <option value="Contato"></option>
+                        <option value="Home"></option>
+                        <option value="Projeto"></option>    
+                    </datalist>
+                  
               </form>
           </div>
         </nav>
@@ -164,25 +160,24 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center my-5">
+                    <div class="col-12 text-center my-5 bg-transparent text-dark">
                     
-                        <h1>Título</h1>
-                        <p> Texto</p>
+                        <h1 class="display-3">Bem-vindo(a)!</h1>
+                        <p class="text">
+                            Aqui você entenderá sobre como funciona o projeto derivado do meu Trabalho de Finalização de Curso.</p>
+                        <p class="text">
+                            Preparado(a)?
+                            <a href="Sobre-o-Projeto.html" class="lino">
+                            Vamos nessa!
+                            </a>
+                        </p>
                     
                     </div>
                 </div>
             </div>
-        
-            <div class="iframe-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JY2NpRhf7EU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        
-            <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.3227324747254!2d-49.2570940855385!3d-16.660725949295166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef3c595a31785%3A0x7098f011f2f9ed6e!2sAv.%20Contorno%2C%201249-1151%20-%20Setor%20Norte%20Ferrovi%C3%A1rio%2C%20Goi%C3%A2nia%20-%20GO%2C%2074063-350!5e0!3m2!1spt-BR!2sbr!4v1577059428468!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            
+                
             <footer class="col-12 text-center my-4 font-weight-light bg-transparent">
-                <p>Copyright &copy; </p>
+                <p class="text">Copyright &copy; </p>
             </footer> 
                     
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
